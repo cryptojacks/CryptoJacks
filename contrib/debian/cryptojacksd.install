@@ -1,0 +1,2 @@
+debian/bin/cryptojacksd usr/bin
+src/cryptojacksd usr/lib/cryptojacks

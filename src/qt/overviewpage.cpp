@@ -1,6 +1,7 @@
 #include "overviewpage.h"
 #include "ui_overviewpage.h"
-
+#include <QDesktopServices>
+#include <QUrl>
 #include "walletmodel.h"
 #include "bitcoinunits.h"
 #include "optionsmodel.h"
@@ -194,4 +195,40 @@ void OverviewPage::showOutOfSyncWarning(bool fShow)
 {
     ui->labelWalletStatus->setVisible(fShow);
     ui->labelTransactionsStatus->setVisible(fShow);
+}
+
+void OverviewPage::on_pushButton_clicked()
+{
+    QString link="https://bitcointalk.org/index.php?topic=1541701.0";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_4_clicked()
+{
+    QString link="http://cj.cryptojackspool.com/index.php?page=statistics&action=pool";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_2_clicked()
+{
+    QString link="https://alcurex.com/#CJ-BTC";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_5_clicked()
+{
+    QString link="http://cryptojacks.com";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_6_clicked()
+{
+    QString link="https://www.coinexchange.io/market/CJ/BTC";
+    QDesktopServices::openUrl(QUrl(link));
+}
+
+void OverviewPage::on_pushButton_3_clicked()
+{
+    QString link="http://node1.cryptojacks.com";
+    QDesktopServices::openUrl(QUrl(link));
 }

@@ -1,6 +1,6 @@
 [Protocol]
-exec=novacoin-qt '%u'
-protocol=novacoin
+exec=cryptojacks-qt '%u'
+protocol=cryptojacks
 input=none
 output=none
 helper=true
